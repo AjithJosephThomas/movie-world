@@ -1,0 +1,70 @@
+.main-header{
+  height:20px;
+}
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: #01D277;
+  transform: rotate(45deg);
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.mar-bottom{
+  margin-bottom:10px;
+}
+.movieDetails {
+  .backdrop{
+    min-height: 200px;
+  }
+  .poster{
+    left: 10%;
+    top: 60%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5), 0px 8px 16px rgba(0, 0, 0, 0.5), 0px 16px 32px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  .title-container{
+    position:absolute;
+    top:10px;
+    left:25%;
+  }
+}
+.movieTile {
+  &:hover{
+    cursor: pointer;
+  }
+  img {
+    min-height:200px;
+    background-size: contain;
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+figure.panel-body{
+  position:relative;
+}
+.badge.badge-pill{
+  border-radius: 8px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  &.high {
+    background: #01D277;
+  }
+
+  &.medium {
+    background: #4902A3;
+  }
+  &.low {
+  background: #D1225B;
+  }
+}
